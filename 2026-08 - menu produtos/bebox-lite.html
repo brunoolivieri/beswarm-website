@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BeBox Lite - BeSwarm</title>
+  <meta name="description" content="BeBox Lite - Módulo Computacional Ultraleve e Compacto para Microdrones e Enxames." />
+  <meta name="author" content="BeSwarm" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+
+  <!-- ====== NAVBAR ====== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/logo_02.png" alt="BeSwarm Logo" />
+        <span>BeSwarm</span>
+      </a>
+      <div class="nav-links">
+        <a href="quem-somos.html" class="nav-link">Quem somos</a>
+        <div class="nav-dropdown">
+          <button class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+            Produtos
+            <svg class="chevron-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="dropdown-menu">
+            <a href="skyeye.html" class="dropdown-item">SkyEye</a>
+            <a href="beswarm-os.html" class="dropdown-item">BeSwarmOS</a>
+            <a href="bebox-pro.html" class="dropdown-item">BeBox Pro</a>
+            <a href="bebox-lite.html" class="dropdown-item">BeBox Lite</a>
+          </div>
+        </div>
+        <a href="roadmap.html" class="nav-link">Roadmap</a>
+        <a href="carreira.html" class="nav-link">Carreira</a>
+        <a href="contato.html" class="nav-link">Contato</a>
+      </div>
+      <button class="nav-mobile-toggle" id="mobile-menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="4" x2="20" y1="6" y2="6"></line>
+          <line x1="4" x2="20" y1="12" y2="12"></line>
+          <line x1="4" x2="20" y1="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <div class="nav-mobile" id="mobile-menu">
+      <a href="quem-somos.html" class="nav-link">Quem somos</a>
+      <div class="nav-mobile-dropdown">
+        <button class="nav-link nav-mobile-dropdown-toggle" aria-expanded="false">
+          <span>Produtos</span>
+          <svg class="chevron-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="nav-mobile-submenu">
+          <a href="skyeye.html" class="nav-link nav-mobile-sublink">SkyEye</a>
+          <a href="beswarm-os.html" class="nav-link nav-mobile-sublink">BeSwarmOS</a>
+          <a href="bebox-pro.html" class="nav-link nav-mobile-sublink">BeBox Pro</a>
+          <a href="bebox-lite.html" class="nav-link nav-mobile-sublink">BeBox Lite</a>
+        </div>
+      </div>
+      <a href="roadmap.html" class="nav-link">Roadmap</a>
+      <a href="carreira.html" class="nav-link">Carreira</a>
+      <a href="contato.html" class="nav-link">Contato</a>
+    </div>
+  </nav>
+
+  <!-- ====== HERO ====== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text" style="max-width:48rem;">
+          <h1>BeBox Lite</h1>
+          <p style="font-size:1.25rem; font-weight:500; margin-bottom:0.5rem;">Solução de Hardware Compacta e Leve para Enxames de Microdrones</p>
+          <p>Módulo ultraminiaturizado de baixíssimo consumo para aeronaves com restrição severa de carga útil.</p>
+        </div>
+        <div class="hero-image">
+          <img src="assets/enxame_cooperativo-HsAbtyBb.png"
+            alt="BeBox Lite - Módulo Compacto BeSwarm" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== INTRODUÇÃO ====== -->
+  <section class="section">
+    <div class="container" style="max-width:64rem;">
+      <div class="whitepaper-section">
+        <h2 class="section-title">Introdução</h2>
+        <p>O BeBox Lite é o módulo de hardware ultraleve da BeSwarm, concebido para viabilizar o uso de inteligência de enxame em aeronaves de formato micro e nano. Com peso reduzido e consumo térmico mínimo, ele leva autonomia avançada onde placas convencionais não conseguem voar.</p>
+        <p style="margin-top:1rem;">Alimentado pelo BeSwarmOS de maneira otimizada, o BeBox Lite garante comunicação mesh resiliente, evitação de colisões e coordenação distribuída com impacto quase nulo na autonomia de voo do veículo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== REQUISITOS SWAP ====== -->
+  <section class="section" style="background: hsl(var(--muted)/0.3);">
+    <div class="container" style="max-width:64rem;">
+      <div class="whitepaper-section">
+        <h2 class="section-title">Otimização SWaP (Size, Weight and Power)</h2>
+        <h3>Eficiência Máxima em Formato Mínimo</h3>
+        <p>Projetado para superar os limites físicos em operações de microdrones:</p>
+        <div class="grid-2" style="margin-top:1.5rem;">
+          <div class="card">
+            <h3>Peso Ultraleve (< 45g)</h3>
+            <p>Arquitetura em placa única de alta densidade sem comprometer a rigidez mecânica.</p>
+          </div>
+          <div class="card">
+            <h3>Consumo de Energia Mínimo</h3>
+            <p>Circuito otimizado que consome uma fração da energia dos computadores industriais tradicionais.</p>
+          </div>
+          <div class="card">
+            <h3>Malha Mesh Integrada</h3>
+            <p>Chipset de rádio embarcado para troca imediata de dados de posição e orientação com o enxame.</p>
+          </div>
+          <div class="card">
+            <h3>Instalação Simplificada</h3>
+            <p>Conectores padronizados para fácil integração mecânica em micro-quadricópteros e asas fixas pequenas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== PILARES ====== -->
+  <section class="section">
+    <div class="container" style="max-width:64rem;">
+      <div class="whitepaper-section">
+        <h2 class="section-title">Pilares do BeBox Lite</h2>
+        <h3>Três Vetores de Design</h3>
+
+        <div class="grid-3" style="margin-top:1.5rem;">
+          <div class="pillar-card">
+            <h4>1. Ultraminiaturização</h4>
+            <ul>
+              <li>• Dimensões reduzidas (35mm x 35mm)</li>
+              <li>• PCB multicamadas de precisão</li>
+              <li>• Conectores micro-JST integrados</li>
+            </ul>
+          </div>
+          <div class="pillar-card">
+            <h4>2. Eficiência Térmica</h4>
+            <ul>
+              <li>• Operação sem necessidade de cooler</li>
+              <li>• Gerenciamento térmico passivo</li>
+              <li>• Modos de economia de energia dinâmicos</li>
+            </ul>
+          </div>
+          <div class="pillar-card">
+            <h4>3. Comunicação Eficiente</h4>
+            <ul>
+              <li>• Protocolo de enxame de baixa banda</li>
+              <li>• Antena de micro-fita integrada</li>
+              <li>• Alcance de rede mesh até 3 km</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== BENEFÍCIOS ====== -->
+  <section class="section" style="background: hsl(var(--muted)/0.3);">
+    <div class="container" style="max-width:64rem;">
+      <div class="whitepaper-section">
+        <h2 class="section-title">Casos de Uso Ideais</h2>
+        <div class="grid-2" style="margin-top:1.5rem;">
+          <div class="card animate-on-scroll">
+            <h3>Operações em Ambientes Confinados</h3>
+            <p>Exploração autônoma de tubulações, galerias subterrâneas e interiores de edifícios.</p>
+          </div>
+          <div class="card animate-on-scroll">
+            <h3>Enxames de Reconhecimento Rápido</h3>
+            <p>Lançamento de dezenas de microdrones para cobertura veloz de perímetros de segurança.</p>
+          </div>
+          <div class="card animate-on-scroll">
+            <h3>Pesquisa Acadêmica e Protótipos</h3>
+            <p>Plataforma perfeita para universidades e centros de P&D testarem algoritmos de enxame.</p>
+          </div>
+          <div class="card animate-on-scroll">
+            <h3>Sensoriamento Ambiental Distribuído</h3>
+            <p>Rede voadora de sensores de qualidade do ar, radiação e medições climáticas em tempo real.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CTA ====== -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Interessado no BeBox Lite?</h2>
+      <p>Fale conosco para conhecer as opções de integração do BeBox Lite nos seus projetos de aeronaves autônomas.</p>
+      <a href="contato.html" class="btn btn-secondary btn-lg">Entre em Contato</a>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" style="margin-bottom:0.5rem;">
+            <img src="assets/logo_02.png" alt="BeSwarm Logo" style="height:2rem;" />
+            <span style="color:#fff; font-family:'Montserrat',sans-serif; font-weight:700;">BeSwarm</span>
+          </a>
+          <p>BeSwarm: Transformando pesquisa de fronteira em soluções que voam.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Links</h4>
+          <a href="quem-somos.html">Quem somos</a>
+          <a href="skyeye.html">SkyEye</a>
+          <a href="beswarm-os.html">BeSwarmOS</a>
+          <a href="bebox-pro.html">BeBox Pro</a>
+          <a href="bebox-lite.html">BeBox Lite</a>
+          <a href="roadmap.html">Roadmap</a>
+          <a href="carreira.html">Carreira</a>
+          <a href="contato.html">Contato</a>
+        </div>
+        <div class="footer-social">
+          <h4>Siga-nos nas redes sociais</h4>
+          <div class="footer-social-icons">
+            <a href="https://linkedin.com/company/beswarm" target="_blank" rel="noopener noreferrer"
+              aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect width="4" height="12" x="2" y="9"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="https://instagram.com/beswarmdrones" target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 BeSwarm. Todos os direitos reservados. Em parceria com a PUC-Rio.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/site.js"></script>
+</body>
+
+</html>

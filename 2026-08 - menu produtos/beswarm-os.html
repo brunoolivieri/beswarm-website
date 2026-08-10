@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BeSwarmOS - BeSwarm</title>
+  <meta name="description" content="BeSwarmOS - Sistema Operacional Distribuído para Inteligência e Controle Autônomo de Enxames de Drones." />
+  <meta name="author" content="BeSwarm" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+
+  <!-- ====== NAVBAR ====== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/logo_02.png" alt="BeSwarm Logo" />
+        <span>BeSwarm</span>
+      </a>
+      <div class="nav-links">
+        <a href="quem-somos.html" class="nav-link">Quem somos</a>
+        <div class="nav-dropdown">
+          <button class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+            Produtos
+            <svg class="chevron-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="dropdown-menu">
+            <a href="skyeye.html" class="dropdown-item">SkyEye</a>
+            <a href="beswarm-os.html" class="dropdown-item">BeSwarmOS</a>
+            <a href="bebox-pro.html" class="dropdown-item">BeBox Pro</a>
+            <a href="bebox-lite.html" class="dropdown-item">BeBox Lite</a>
+          </div>
+        </div>
+        <a href="roadmap.html" class="nav-link">Roadmap</a>
+        <a href="carreira.html" class="nav-link">Carreira</a>
+        <a href="contato.html" class="nav-link">Contato</a>
+      </div>
+      <button class="nav-mobile-toggle" id="mobile-menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="4" x2="20" y1="6" y2="6"></line>
+          <line x1="4" x2="20" y1="12" y2="12"></line>
+          <line x1="4" x2="20" y1="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <div class="nav-mobile" id="mobile-menu">
+      <a href="quem-somos.html" class="nav-link">Quem somos</a>
+      <div class="nav-mobile-dropdown">
+        <button class="nav-link nav-mobile-dropdown-toggle" aria-expanded="false">
+          <span>Produtos</span>
+          <svg class="chevron-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="nav-mobile-submenu">
+          <a href="skyeye.html" class="nav-link nav-mobile-sublink">SkyEye</a>
+          <a href="beswarm-os.html" class="nav-link nav-mobile-sublink">BeSwarmOS</a>
+          <a href="bebox-pro.html" class="nav-link nav-mobile-sublink">BeBox Pro</a>
+          <a href="bebox-lite.html" class="nav-link nav-mobile-sublink">BeBox Lite</a>
+        </div>
+      </div>
+      <a href="roadmap.html" class="nav-link">Roadmap</a>
+      <a href="carreira.html" class="nav-link">Carreira</a>
+      <a href="contato.html" class="nav-link">Contato</a>
+    </div>
+  </nav>
+
+  <!-- ====== HERO ====== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text" style="max-width:48rem;">
+          <h1>BeSwarmOS</h1>
+          <p style="font-size:1.25rem; font-weight:500; margin-bottom:0.5rem;">Sistema Operacional Distribuído para
+            Controle Autônomo de Enxames</p>
+          <p>Plataforma de software em tempo real com coordenação inteligente e fusão de dados em borda.</p>
+        </div>
+        <div class="hero-image">
+          <img src="assets/enxame_cooperativo-HsAbtyBb.png"
+            alt="BeSwarmOS - Sistema Operacional de Enxames de Drones" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== INTRODUÇÃO ====== -->
+  <section class="section">
+    <div class="container" style="max-width:64rem;">
+      <div class="whitepaper-section">
+        <h2 class="section-title">Introdução</h2>
+        <p>O BeSwarmOS é a espinha dorsal de software projetada para transformar múltiplos drones individuais em um
+          organismo único e auto-coordenado. Desenvolvido para lidar com ambientes altamente dinâmicos e sem
+          infraestrutura centralizada, o sistema opera de forma totalmente descentralizada.</p>
+        <p style="margin-top:1rem;">Com arquitetura resiliente a falhas e comunicação ad-hoc peer-to-peer, o BeSwarmOS
+          gerencia em tempo real a alocação de missões, a redistribuição de tarefas e o planejamento autônomo de rotas,
+          garantindo continuidade operacional mesmo se nós individuais forem perdidos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== O PROBLEMA ====== -->
+  <section class="section" style="background: hsl(var(--muted)/0.3);">
+    <div class="container" style="max-width:64rem;">
+      <div class="whitepaper-section">
+        <h2 class="section-title">Desafios de Software em Enxames Multi-Agentes</h2>
+        <h3>Complexidade de Orquestração em Tempo Real</h3>
+        <p>Sistemas tradicionais de pilotos automáticos não foram desenhados para trabalho em grupo distribuído:</p>
+        <div class="grid-2" style="margin-top:1.5rem;">
+          <div class="card">
+            <h3>Gargalos de Centralização</h3>
+            <p>Depender de uma única estação de controle terrestre limita a escala e cria um ponto crítico de falha.</p>
+          </div>
+          <div class="card">
+            <h3>Instabilidade de Rede</h3>
+            <p>Conexões em áreas urbanas ou hostis sofrem interrupções frequentes e perdas temporárias de sinal.</p>
+          </div>
+          <div class="card">
+            <h3>Conflitos de Trajetória</h3>
+            <p>Evitar colisões entre dezenas de veículos próximos exige processamento e coordenação em milissegundos.</p>
+          </div>
+          <div class="card">
+            <h3>Alocação Dinâmica de Carga</h3>
+            <p>Reorganizar tarefas autônomas quando um nó falha exige inteligência distribuída sem intervenção humana.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== ARQUITETURA ====== -->
+  <section class="section">
+    <div class="container" style="max-width:64rem;">
+      <div class="whitepaper-section">
+        <h2 class="section-title">Arquitetura de Software</h2>
+        <h3>Três Pilares do BeSwarmOS</h3>
+
+        <div class="grid-3" style="margin-top:1.5rem;">
+          <div class="pillar-card">
+            <h4>1. Core Descentralizado</h4>
+            <ul>
+              <li>• Arquitetura micro-serviços RTOS</li>
+              <li>• Tolerância nativa a partição de rede</li>
+              <li>• Estado sincronizado por consenso leve</li>
+            </ul>
+          </div>
+          <div class="pillar-card">
+            <h4>2. Motor de IA em Borda</h4>
+            <ul>
+              <li>• Processamento de visão computacional</li>
+              <li>• Fusão de dados multossensorial</li>
+              <li>• Tomada de decisão autônoma local</li>
+            </ul>
+          </div>
+          <div class="pillar-card">
+            <h4>3. Malha Mesh Adaptativa</h4>
+            <ul>
+              <li>• Autocura e autoconfiguração de rede</li>
+              <li>• Roteamento dinâmico de comandos</li>
+              <li>• Baixa latência e alta imunidade a ruído</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== BENEFÍCIOS ====== -->
+  <section class="section" style="background: hsl(var(--muted)/0.3);">
+    <div class="container" style="max-width:64rem;">
+      <div class="whitepaper-section">
+        <h2 class="section-title">Diferenciais do BeSwarmOS</h2>
+        <div class="grid-2" style="margin-top:1.5rem;">
+          <div class="card animate-on-scroll">
+            <h3>Independência de Hardware</h3>
+            <p>Pode ser executado em uma variedade de computadores de bordo e plataformas de drones comerciais ou militares.</p>
+          </div>
+          <div class="card animate-on-scroll">
+            <h3>Escalabilidade sem Limites</h3>
+            <p>Suporta o crescimento do enxame de 3 a centenas de aeronaves sem perda de desempenho ou complexidade operacional.</p>
+          </div>
+          <div class="card animate-on-scroll">
+            <h3>Segurança e Criptografia</h3>
+            <p>Comunicações encriptadas ponto-a-ponto com autenticação rigorosa entre todos os nós da rede.</p>
+          </div>
+          <div class="card animate-on-scroll">
+            <h3>Interface com Operador</h3>
+            <p>API aberta e dashboards intutivos para supervisão com foco na tomada de decisão estratégica.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CTA ====== -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Interessado no BeSwarmOS?</h2>
+      <p>Entre em contato com nossa equipe técnica para agendar uma demonstração ou integrar o BeSwarmOS às suas aeronaves.</p>
+      <a href="contato.html" class="btn btn-secondary btn-lg">Entre em Contato</a>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" style="margin-bottom:0.5rem;">
+            <img src="assets/logo_02.png" alt="BeSwarm Logo" style="height:2rem;" />
+            <span style="color:#fff; font-family:'Montserrat',sans-serif; font-weight:700;">BeSwarm</span>
+          </a>
+          <p>BeSwarm: Transformando pesquisa de fronteira em soluções que voam.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Links</h4>
+          <a href="quem-somos.html">Quem somos</a>
+          <a href="skyeye.html">SkyEye</a>
+          <a href="beswarm-os.html">BeSwarmOS</a>
+          <a href="bebox-pro.html">BeBox Pro</a>
+          <a href="bebox-lite.html">BeBox Lite</a>
+          <a href="roadmap.html">Roadmap</a>
+          <a href="carreira.html">Carreira</a>
+          <a href="contato.html">Contato</a>
+        </div>
+        <div class="footer-social">
+          <h4>Siga-nos nas redes sociais</h4>
+          <div class="footer-social-icons">
+            <a href="https://linkedin.com/company/beswarm" target="_blank" rel="noopener noreferrer"
+              aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect width="4" height="12" x="2" y="9"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="https://instagram.com/beswarmdrones" target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 BeSwarm. Todos os direitos reservados. Em parceria com a PUC-Rio.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/site.js"></script>
+</body>
+
+</html>
